@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>アカウント作成</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../static/css/account/register.css" th:href="@{/css/account/register.css}"></link>
+	</head>
+
+	<body class="bg-light">
+		<div class="container">
+			<div class="py-5 text-center">
+				<img class="d-block mx-auto mb-4" src="../images/bootstrap-solid.svg" alt="" width="72" height="72">
+				<h2>アカウント作成</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 order-md-1">
+					<form class="needs-validation" novalidate>
+
+						<div class="mb-3">
+							<label for="email">Eメール</label>
+							<input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+							<div class="invalid-feedback">
+								有効なメールアドレスを入力してください
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="password1">パスワード</label>
+							<input type="password1" class="form-control" id="password1" placeholder="パスワード" required>
+							<div class="invalid-feedback">
+								パスワードを入力してください
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="password2">確認用パスワード</label>
+							<input type="password2" class="form-control" id="password2" placeholder="確認用パスワード" required>
+							<div class="invalid-feedback">
+								パスワードを入力してください
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="familyName">姓</label>
+								<input type="text" class="form-control" id="familyName" placeholder="" value="" required>
+								<div class="invalid-feedback">
+									名字を入力してください
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="givenName">名</label>
+								<input type="text" class="form-control" id="givenName" placeholder="" value="" required>
+								<div class="invalid-feedback">
+									名前を入力してください
+								</div>
+							</div>
+						</div>
+
+						<button class="btn btn-primary btn-lg btn-block" type="submit">アカウント作成</button>
+					</form>
+				</div>
+			</div>
+
+			<footer class="my-5 pt-5 text-muted text-center text-small">
+				<p class="mb-1">&copy; 2017-2019 会社名</p>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#">プライバシー</a></li>
+					<li class="list-inline-item"><a href="#">条項</a></li>
+					<li class="list-inline-item"><a href="#">サポート</a></li>
+				</ul>
+			</footer>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+	</body>
+
+</html>
